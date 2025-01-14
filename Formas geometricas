@@ -1,0 +1,35 @@
+//Programa para firguras 
+
+#include <stdio.h>
+
+int main() {
+    int opcion; 
+
+    do {
+// Imprimir menu
+        printf("Menu de formas geometricas\n\n");
+        printf("1-. Cuadrado\n");
+        printf("2-. Circulo\n");
+        printf("3-. Triangulo\n");
+        printf("4-. Salir\n\n");
+
+        printf("Ingrese el numero seleccionado: ");
+        scanf("%d", &opcion);
+
+// Imprimir resultados segun la opcion
+        if (opcion == 1) {
+            printf("El cuadrado ha dado la vuelta 360 grados.\n\n");
+        } else if (opcion == 2) {
+            printf("El circulo esta rodando.\n\n");
+        } else if (opcion == 3) {
+            printf("El triangulo ha girado 120 grados.\n\n");
+        } else if (opcion == 4) {
+            printf("Saliendo del programa.\n");
+        } else {
+            printf("Opcion no valida. Intente de nuevo.\n");
+        }
+
+    } while (opcion != 4); 
+
+    return 0;
+}
