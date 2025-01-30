@@ -1,0 +1,27 @@
+// programa de suma que recibe dos numeros y luego muestra su suma
+
+import java.util.Scanner; // el programa usa la clase scanner
+
+public class Main {
+//El metodo main empieza la ejecucion de la aplicacion en java
+  public static void main(String[] args){
+    //crea un objeto Scanner para obtener la entrada de la ventana de comandos
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Ingrese el numero entero: "); // indicador
+    int number1 = input.nextInt(); //lee el primer numero del usuario
+
+    System.out.print("Ingrese segundo numero entero: "); // indicador
+    int number2 = input.nextInt(); //lee el segundo numero del usuario
+
+    int sum = number1 + number2;
+
+    System.out.printf("La suma es %d%n", sum);// mostrar la suma
+
+    input.close(); // cierra el objeto Scanner
+  
+  }
+  
+}
+
+
